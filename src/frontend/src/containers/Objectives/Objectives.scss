@@ -1,0 +1,38 @@
+.objectives {
+  width: 100%;
+  color: #ffffff;
+  padding: 30px 0;
+  .objectivesContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-top: 20px;
+    .objective {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 300px;
+      width: 375px;
+      padding: 10px;
+      border: 5px solid #ffffff;
+      border-radius: 10px;
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+}
+
+//media queries
+@media (max-width: 768px) {
+  .objectivesContainer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    .objective {
+      width: 75vw;
+      margin-bottom: 20px;
+    }
+  }
+}
